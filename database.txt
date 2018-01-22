@@ -1,0 +1,11 @@
+CREATE DATABASE NOMBRECLIENTE;
+
+CREATE TABLE IF NOT EXISTS `contacto` (
+	`id` int(10) NOT NULL auto_increment,
+	`nombre` varchar(255),
+	`email` varchar(255),
+	`numero` varchar(255),
+	`mensaje` varchar(255),
+	`fecha` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY( `id` )
+);
